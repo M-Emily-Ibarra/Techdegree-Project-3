@@ -1,0 +1,34 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+/* Global Layout Set-up */
+* {
+ 	-webkit-box-sizing: border-box;
+ 	        box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Merriweather', Arial, sans-serif;
+	color: #000;
+	/* Cambridge Blue */
+	background: #fff;
+}
+
+header {
+
+}
+
+h1, h2, h3 {
+
+}
+
+/* Layout Styles */
+
+
+/* Media Queries */
+@media (min-width:768px) {
+
+
+}
