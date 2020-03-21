@@ -16,6 +16,8 @@ body {
 	background: #fff;
 }
 
+
+/*  background color for header block, headers, divider #2d3945 */
 header {
 
 }
@@ -24,8 +26,27 @@ h1, h2, h3 {
 
 }
 
-/* Layout Styles */
 
+/*  input background color #eff0f1/eee, ccc for text? */
+/* p text using #55687a */
+
+
+/* -----
+
+Focus state color for text field needs to be changed and transition needs to be added for exceeds
+
+----- */
+input:focus,
+textarea:focus {
+    border: 1px solid #46698b;
+}
+
+/* Layout Styles */
+/* -----
+
+Need to change background color of one of the main sections of the site
+
+----- */
 
 /* Media Queries */
 @media (min-width:768px) {

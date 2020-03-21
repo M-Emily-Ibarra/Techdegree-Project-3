@@ -29,7 +29,7 @@
           		<input type="email" id="email" name="user_email" placeholder="Required" required>
 
 				<label for="phone">Phone Number</label>
-          		<input type="tel" id="phone" name="user_phone">
+          		<input type="tel" id="phone" name="user_phone" placeholder="(555)555-5555">
 
 				<label for="address">Street Address</label>
           		<input type="text" id="address" name="user_address">
@@ -101,18 +101,16 @@
 				<legend>Newsletter</legend>
 
 				<label>Select the newsletters you would like to receive</label>
-          		<input type="checkbox" id="html" value="html_news" name="user_newsletter"><label for="html">HTML News</label><br>
-          		<input type="checkbox" id="css" value="css_news" name="user_newsletter"><label for="css">CSS News</label><br>
-				<input type="checkbox" id="javascript" value="javascript_news" name="user_newsletter"><label for="javascript">Javascript News</label>
+          		<input type="checkbox" id="html" name="user_newsletter" value="html_news"><label for="html">HTML News</label><br>
+          		<input type="checkbox" id="css" name="user_newsletter" value="css_news"><label for="css">CSS News</label><br>
+				<input type="checkbox" id="javascript" name="user_newsletter" value="javascript_news"><label for="javascript">Javascript News</label>
 
 				<label>Newsletter format</label>
-				<select id="format" name="user_format">
-					<option value="html">HTML</option>
-					<option value="text">Plain text</option>
-				</select>
-
+				<input type="radio" id="user_html" name="user_format" value="html_news"><label for="user_html">HTML</label><br>
+          		<input type="radio" id="user_css" name="user_format" value="css_news"><label for="user_css">Plain text</label>
+												
 				<label for="topics">Other topics you'd like to hear about</label>
-				<textarea id="topics" name="user_topics"></textarea>
+				<textarea id="topics" name="user_topics" placeholder="Tell me more, tell me more..."></textarea>
 			</fieldset>
 
 			<button type="submit">Sign Up</button>
