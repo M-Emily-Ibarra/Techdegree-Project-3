@@ -103,15 +103,15 @@
 					<legend>Newsletter</legend>
 
 					<label>Select the newsletters you would like to receive</label>
-	          		<input id="html" type="checkbox" name="user_newsletter" value="html_news"><label for="html">HTML News</label><br>
-	          		<input id="css" type="checkbox" name="user_newsletter" value="css_news"><label for="css">CSS News</label><br>
-					<input id="javascript" type="checkbox" name="user_newsletter" value="javascript_news"><label for="javascript">Javascript News</label>
+	          		<label for="html" class="label_wrap"><span><input id="html" type="checkbox" name="user_newsletter" value="html_news"></span><span>HTML News</span></label>
+	          		<label for="css" class="label_wrap"><span><input id="css" class="resp_label" type="checkbox" name="user_newsletter" value="css_news"></span><span>CSS News</span></label>
+					<label for="javascript" class="label_wrap"><span><input id="javascript" class="resp_label" type="checkbox" name="user_newsletter" value="javascript_news"></span><span>Javascript News</span></label>
 
-					<label>Newsletter format</label>
-					<input id="user_html" type="radio" name="user_format" value="html_news"><label for="user_html">HTML</label><br>
-	          		<input id="user_css" type="radio" name="user_format" value="css_news"><label for="user_css">Plain text</label>
+					<label class="pt">Newsletter format</label>
+					<label for="user_html" class="label_wrap"><span><input id="user_html" class="resp_label" type="radio" name="user_format" value="html_news"></span><span>HTML</span></label>
+	          		<label for="user_css" class="label_wrap"><span><input id="user_css" class="resp_label" type="radio" name="user_format" value="css_news"></span><span>Plain text</span></label>
 
-					<label for="topics">Other topics you'd like to hear about</label>
+					<label class="pt" for="topics">Other topics you'd like to hear about</label>
 					<textarea id="topics" class="input-primary topics" name="user_topics" placeholder="Tell me more, tell me more..."></textarea>
 				</fieldset>
 
