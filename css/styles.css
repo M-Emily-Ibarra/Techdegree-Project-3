@@ -10,11 +10,12 @@ Focus state color for text field needs to be changed and transition needs to be 
 
 ----- */
 input:focus,
-textarea:focus {
-    border: 1px solid #46698b;
+textarea:focus,
+select:focus {
+    outline: 1px solid #46698b;
 }
 
-/* Layout Styles */
+/* Base Elements */
 
 /* -----
 
@@ -22,22 +23,33 @@ Need to change background color of one of the main sections of the site
 
 ----- */
 header { background-color: #2d3945; }
-
 h1 { margin: 0; padding: 1.5rem 0; font-size: 1.125rem; color: #fff; text-align: center; text-transform: uppercase; }
-
 h2 { margin: 1.5rem auto 0; font-size: 1.125rem; text-align: center; }
-p { margin: 0.5rem auto 0; padding: 0 1rem 2rem; border-bottom: 3px solid #2d3945; text-align: center; color: #8C9297; font-size: 0.875rem; }
+p { margin: 0.5rem auto 0; padding: 0 1rem 2rem; border-bottom: 3px solid #2d3945; text-align: center; color: #808080; font-size: 0.875rem; }
 hr { margin: 0.25rem auto 0; border-color: #2d3945; }
+footer { display: block; padding: 1.5rem 0; text-align: center; font-size: 0.8125rem; font-style: italic; color: #808080; }
 
-fieldset { border:none; }
+/* Form Elements */
+fieldset { padding-bottom: 1.25rem; border:none; }
 fieldset:not(:last-of-type) { border-bottom: 1px solid #2d3945; }
-legend { margin: 0; padding: 1.5rem 0 0; font-size: 1.125rem; font-weight: bold; }
-label { display: block; padding: 0.5rem 0; font-size: 0.75rem; color: #8C9297; }
-.input-primary { width: 100%; padding: 0.75rem; border: 1px solid #eee; border-radius: 5px; background-color: #eee; }
+legend { margin: 0; padding: 1.5rem 0 0.5rem; font-size: 1.125rem; font-weight: bold; }
+label { display: block; padding: 0.5rem 0; font-size: 0.875rem; color: #808080; }
+.input-primary { width: 100%; padding: 0.75rem 1rem 0.75rem 0.75rem; border: 1px solid #eee; border-radius: 5px; background-color: #eee; }
+.input-primary:not(.topics) { margin-bottom: 0.5rem; }
+input[placeholder],
+textarea[placeholder],
+select { font-style: italic; font-family: 'Merriweather', Arial, sans-serif; color: #808080; }
+.input-primary::placeholder { text-align: right; font-size: 0.75rem; }
+.topics { min-height: 100px; }
+.topics::placeholder { text-align: left; }
+button[type="submit"] { width: 100%; padding: 1rem; border: none; border-radius: 3px; font-size: 1rem; font-weight: 700; font-family: 'Merriweather', Arial, sans-serif; background-color: #4ebbb5; color: #fff; text-align: center; }
+button[type="submit"]:focus,
+button[type="submit"]:hover { background-color: #32817d; }
+
+/* Layout Styles */
 .is-half { width: 50%; }
 .newsletter_wrap { padding: 0 0.75rem; }
 
-button[type="submit"] { width: 100%; padding: 1rem; border: none; border-radius: 3px; font-size: 1rem; font-weight: 700; font-family: 'Merriweather', Arial, sans-serif; background-color: #4ebbb5; color: #fff; text-align: center; }
 
 /* Media Queries */
 @media (min-width:768px) {

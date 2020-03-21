@@ -41,6 +41,7 @@
 					<label for="state">State</label>
 					<!-- USA State List HTML select dropdown snippet from https://www.freeformatter.com/usa-state-list-html-select.html -->
 					<select id="state" class="input-primary" name="user_state">
+						<option value="">Choose State</option>
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
 						<option value="AZ">Arizona</option>
@@ -111,7 +112,7 @@
 	          		<input id="user_css" type="radio" name="user_format" value="css_news"><label for="user_css">Plain text</label>
 
 					<label for="topics">Other topics you'd like to hear about</label>
-					<textarea id="topics" class="input-primary" name="user_topics" placeholder="Tell me more, tell me more..."></textarea>
+					<textarea id="topics" class="input-primary topics" name="user_topics" placeholder="Tell me more, tell me more..."></textarea>
 				</fieldset>
 
 				<button type="submit">Sign Up</button>
