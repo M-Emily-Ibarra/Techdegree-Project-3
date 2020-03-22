@@ -98,22 +98,10 @@ select {
   font-family: 'Merriweather', Arial, sans-serif;
   color: #808080;
 }
-.input-primary::-webkit-input-placeholder {
-  text-align: right;
-  font-size: 0.75rem;
-}
-.input-primary::-moz-placeholder {
-  text-align: right;
-  font-size: 0.75rem;
-}
-.input-primary:-ms-input-placeholder {
-  text-align: right;
-  font-size: 0.75rem;
-}
-.input-primary::-ms-input-placeholder {
-  text-align: right;
-  font-size: 0.75rem;
-}
+.input-primary::-webkit-input-placeholder,
+.input-primary::-moz-placeholder,
+.input-primary:-ms-input-placeholder,
+.input-primary::-ms-input-placeholder,
 .input-primary::placeholder {
   text-align: right;
   font-size: 0.75rem;
@@ -122,22 +110,13 @@ select {
   min-height: 100px;
   margin: 0.5rem 0;
 }
-.topics::-webkit-input-placeholder {
-  text-align: left;
-}
-.topics::-moz-placeholder {
-  text-align: left;
-}
-.topics:-ms-input-placeholder {
-  text-align: left;
-}
-.topics::-ms-input-placeholder {
-  text-align: left;
-}
+.topics::-webkit-input-placeholder,
+.topics::-moz-placeholder,
+.topics:-ms-input-placeholder,
+.topics::-ms-input-placeholder,
 .topics::placeholder {
   text-align: left;
 }
-
 .label_wrap {
   display: table;
 }
