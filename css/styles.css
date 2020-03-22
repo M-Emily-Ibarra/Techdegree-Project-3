@@ -1,7 +1,10 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 /* Global Layout Set-up */
-* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -57,6 +60,7 @@ footer {
 
 /* Form Elements */
 fieldset {
+  margin: 0;
   padding: 0 0 1.25rem;
   border:none;
 }
@@ -98,10 +102,6 @@ select {
   font-family: 'Merriweather', Arial, sans-serif;
   color: #808080;
 }
-.input-primary::-webkit-input-placeholder,
-.input-primary::-moz-placeholder,
-.input-primary:-ms-input-placeholder,
-.input-primary::-ms-input-placeholder,
 .input-primary::placeholder {
   text-align: right;
   font-size: 0.75rem;
@@ -110,10 +110,6 @@ select {
   min-height: 100px;
   margin: 0.5rem 0;
 }
-.topics::-webkit-input-placeholder,
-.topics::-moz-placeholder,
-.topics:-ms-input-placeholder,
-.topics::-ms-input-placeholder,
 .topics::placeholder {
   text-align: left;
 }
@@ -175,7 +171,15 @@ button[type="submit"]:hover {
     padding: 0 0 0.5rem;
   }
   legend {
-    padding: 2rem 0 0.5rem;
+    padding: 2rem 0 1rem;
+  }
+  .input-primary:not(.topics){
+    display: inline-block;
+    width: 350px;
+    margin-top: 0.5rem;
+  }
+  .input-primary.is-small {
+    width: 150px;
   }
 
   .newsletter_wrap {
@@ -186,28 +190,9 @@ button[type="submit"]:hover {
   .m-pt {
     padding-top: 1rem;
   }
-
-  .flex {
-    display: -webkit-box; display:
-    -ms-flexbox; display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
+  .m-label_inline {
+    display: inline-block;
+    width: 150px;
   }
-  .flex:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-  .flex label {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 30%;
-    flex: 0 0 30%;
-  }
-  .flex input.is-small {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 150px;
-    flex: 0 1 150px;
-  }
-
+  
 }
